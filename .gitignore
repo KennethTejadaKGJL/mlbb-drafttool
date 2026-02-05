@@ -1,0 +1,38 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Next.js
+client/.next/
+client/out/
+client/build/
+
+# Production
+build/
+dist/
+
+# Environment variables
+.env
+.env.local
+.env.production.local
+.env.development.local
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Backups (optional - uncomment if you don't want to commit backups)
+# backups/
