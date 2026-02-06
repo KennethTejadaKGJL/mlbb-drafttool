@@ -95,10 +95,10 @@ io.on('connection', (socket) => {
       else gameState.redTeam.push(gameState.tempHover);
     }
 
-    // 3. Advance Step
+    // 3. Advance Step & Reset Hover
+    gameState.tempHover = null;
     if (gameState.stepIndex < DRAFT_ORDER.length - 1) {
       gameState.stepIndex++;
-      gameState.tempHover = null; // Reset hover
       resetTimer();
     } else {
       gameState.finished = true;
